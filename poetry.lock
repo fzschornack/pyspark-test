@@ -1,0 +1,178 @@
+[[package]]
+name = "certifi"
+version = "2022.6.15.1"
+description = "Python package for providing Mozilla's CA Bundle."
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[[package]]
+name = "charset-normalizer"
+version = "2.1.1"
+description = "The Real First Universal Charset Detector. Open, modern and actively maintained alternative to Chardet."
+category = "main"
+optional = false
+python-versions = ">=3.6.0"
+
+[package.extras]
+unicode_backport = ["unicodedata2"]
+
+[[package]]
+name = "idna"
+version = "3.3"
+description = "Internationalized Domain Names in Applications (IDNA)"
+category = "main"
+optional = false
+python-versions = ">=3.5"
+
+[[package]]
+name = "JayDeBeApi"
+version = "1.2.3"
+description = "Use JDBC database drivers from Python 2/3 or Jython with a DB-API."
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+JPype1 = {version = "*", markers = "python_version > \"2.7\" and platform_python_implementation != \"Jython\""}
+
+[[package]]
+name = "JPype1"
+version = "1.4.0"
+description = "A Python to Java bridge."
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.extras]
+docs = ["readthedocs-sphinx-ext", "sphinx", "sphinx-rtd-theme"]
+tests = ["pytest"]
+
+[[package]]
+name = "py4j"
+version = "0.10.9.5"
+description = "Enables Python programs to dynamically access arbitrary Java objects"
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
+name = "pyspark"
+version = "3.3.0"
+description = "Apache Spark Python API"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.dependencies]
+py4j = "0.10.9.5"
+
+[package.extras]
+ml = ["numpy (>=1.15)"]
+mllib = ["numpy (>=1.15)"]
+pandas_on_spark = ["numpy (>=1.15)", "pandas (>=1.0.5)", "pyarrow (>=1.0.0)"]
+sql = ["pandas (>=1.0.5)", "pyarrow (>=1.0.0)"]
+
+[[package]]
+name = "python-dotenv"
+version = "0.21.0"
+description = "Read key-value pairs from a .env file and set them as environment variables"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.extras]
+cli = ["click (>=5.0)"]
+
+[[package]]
+name = "requests"
+version = "2.28.1"
+description = "Python HTTP for Humans."
+category = "main"
+optional = false
+python-versions = ">=3.7, <4"
+
+[package.dependencies]
+certifi = ">=2017.4.17"
+charset-normalizer = ">=2,<3"
+idna = ">=2.5,<4"
+urllib3 = ">=1.21.1,<1.27"
+
+[package.extras]
+socks = ["PySocks (>=1.5.6,!=1.5.7)"]
+use_chardet_on_py3 = ["chardet (>=3.0.2,<6)"]
+
+[[package]]
+name = "urllib3"
+version = "1.26.12"
+description = "HTTP library with thread-safe connection pooling, file post, and more."
+category = "main"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, !=3.5.*, <4"
+
+[package.extras]
+brotli = ["brotli (>=1.0.9)", "brotlicffi (>=0.8.0)", "brotlipy (>=0.6.0)"]
+secure = ["certifi", "cryptography (>=1.3.4)", "idna (>=2.0.0)", "ipaddress", "pyOpenSSL (>=0.14)", "urllib3-secure-extra"]
+socks = ["PySocks (>=1.5.6,!=1.5.7,<2.0)"]
+
+[metadata]
+lock-version = "1.1"
+python-versions = "^3.10"
+content-hash = "c10db0548267b64bb51aabc22baef5317267e3324889c36daf6f603cac32acfb"
+
+[metadata.files]
+certifi = [
+    {file = "certifi-2022.6.15.1-py3-none-any.whl", hash = "sha256:43dadad18a7f168740e66944e4fa82c6611848ff9056ad910f8f7a3e46ab89e0"},
+    {file = "certifi-2022.6.15.1.tar.gz", hash = "sha256:cffdcd380919da6137f76633531a5817e3a9f268575c128249fb637e4f9e73fb"},
+]
+charset-normalizer = [
+    {file = "charset-normalizer-2.1.1.tar.gz", hash = "sha256:5a3d016c7c547f69d6f81fb0db9449ce888b418b5b9952cc5e6e66843e9dd845"},
+    {file = "charset_normalizer-2.1.1-py3-none-any.whl", hash = "sha256:83e9a75d1911279afd89352c68b45348559d1fc0506b054b346651b5e7fee29f"},
+]
+idna = [
+    {file = "idna-3.3-py3-none-any.whl", hash = "sha256:84d9dd047ffa80596e0f246e2eab0b391788b0503584e8945f2368256d2735ff"},
+    {file = "idna-3.3.tar.gz", hash = "sha256:9d643ff0a55b762d5cdb124b8eaa99c66322e2157b69160bc32796e824360e6d"},
+]
+JayDeBeApi = [
+    {file = "JayDeBeApi-1.2.3-py2-none-any.whl", hash = "sha256:fbfbc7e41d7b35af08df6376a73637820c71a1373b40244b135bd07f3e865c81"},
+    {file = "JayDeBeApi-1.2.3-py3-none-any.whl", hash = "sha256:d6256bdad1e14414225fbc839f7d56922ea3abc06153f3a57490fee909fecd64"},
+    {file = "JayDeBeApi-1.2.3.tar.gz", hash = "sha256:f25e9307fbb5960cb035394c26e37731b64cc465b197c4344cee85ec450ab92f"},
+]
+JPype1 = [
+    {file = "JPype1-1.4.0-cp310-cp310-macosx_10_9_universal2.whl", hash = "sha256:bb286d63324a352809c9cf006d194be4c9fba8a333ad20b68bb955899a20fe3b"},
+    {file = "JPype1-1.4.0-cp310-cp310-manylinux_2_12_i686.manylinux2010_i686.whl", hash = "sha256:6775e77933f3d045be94cb8a1de288e77b5df11330acc88d94488bdf1c62ac6a"},
+    {file = "JPype1-1.4.0-cp310-cp310-manylinux_2_12_x86_64.manylinux2010_x86_64.whl", hash = "sha256:72ad38acf7f1c5d729bf2c400238a0adf7595ad2d94099d76ea0bd700712696d"},
+    {file = "JPype1-1.4.0-cp310-cp310-win_amd64.whl", hash = "sha256:7db36995e809a5a70e44f86f2937cfe9d0e6f9f47ead9af85e7be1e31b32c54b"},
+    {file = "JPype1-1.4.0-cp37-cp37m-macosx_10_9_x86_64.whl", hash = "sha256:e9afaa5d4ab6921fcaf6ab1c6ce0c1328a38779581db6917838c0ba1b463d417"},
+    {file = "JPype1-1.4.0-cp37-cp37m-manylinux_2_5_i686.manylinux1_i686.whl", hash = "sha256:38641e3dbbe6e973ba3f72a70fa633be37df9d6756577049298d2285604bec1a"},
+    {file = "JPype1-1.4.0-cp37-cp37m-manylinux_2_5_x86_64.manylinux1_x86_64.whl", hash = "sha256:1c7457a2f20ab28308e4e16d2ae0842ca086785ecb0296f17ed6d85158a02c35"},
+    {file = "JPype1-1.4.0-cp37-cp37m-win_amd64.whl", hash = "sha256:998d2dc909d86b5fac72245d9c76303282ec634f2bcb3bbcf1c43ebeb7e08e77"},
+    {file = "JPype1-1.4.0-cp38-cp38-macosx_10_9_x86_64.whl", hash = "sha256:c60b3b30e786073d62c2f57a70e5373cb78ad584aa49e9cf5b2ca6eec25065c4"},
+    {file = "JPype1-1.4.0-cp38-cp38-manylinux_2_5_i686.manylinux1_i686.whl", hash = "sha256:e5cf6b25ade01165c9b07eb6496486015029a319b4b10d6b6997a0b1d2b24344"},
+    {file = "JPype1-1.4.0-cp38-cp38-manylinux_2_5_x86_64.manylinux1_x86_64.whl", hash = "sha256:64652443f5d2b807d19722e2b5f880a79a5fcc4ea6a58a682bd2f2231ff06165"},
+    {file = "JPype1-1.4.0-cp38-cp38-win_amd64.whl", hash = "sha256:869e14bc15b094f26719966606a183cc8620f0ab18dfb52c2991abbeff587ef4"},
+    {file = "JPype1-1.4.0-cp39-cp39-macosx_10_9_x86_64.whl", hash = "sha256:b852c720e47b8ebe1038e5b746b4a975912e4c580f0332e60e760ce72b1ecc47"},
+    {file = "JPype1-1.4.0-cp39-cp39-manylinux_2_5_i686.manylinux1_i686.whl", hash = "sha256:3e6eaad55495885dac041dba29adaa28574fea703ad3978be59dc9a589b02dd5"},
+    {file = "JPype1-1.4.0-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.whl", hash = "sha256:e0eb28076b788415b990c645ae76c4fc2c86adbbfb298bf71175aa19b08386c7"},
+    {file = "JPype1-1.4.0-cp39-cp39-win_amd64.whl", hash = "sha256:ae1466aa18a60af838ad6f8caed4360f165a7019005c19ba1f07d379c5b04022"},
+    {file = "JPype1-1.4.0.tar.gz", hash = "sha256:0c5f665ee3e6e31c27e9d2d48dd12bf4eb4fe6858823e6a11201a035274ccfe1"},
+]
+py4j = [
+    {file = "py4j-0.10.9.5-py2.py3-none-any.whl", hash = "sha256:52d171a6a2b031d8a5d1de6efe451cf4f5baff1a2819aabc3741c8406539ba04"},
+    {file = "py4j-0.10.9.5.tar.gz", hash = "sha256:276a4a3c5a2154df1860ef3303a927460e02e97b047dc0a47c1c3fb8cce34db6"},
+]
+pyspark = [
+    {file = "pyspark-3.3.0.tar.gz", hash = "sha256:7ebe8e9505647b4d124d5a82fca60dfd3891021cf8ad6c5ec88777eeece92cf7"},
+]
+python-dotenv = [
+    {file = "python-dotenv-0.21.0.tar.gz", hash = "sha256:b77d08274639e3d34145dfa6c7008e66df0f04b7be7a75fd0d5292c191d79045"},
+    {file = "python_dotenv-0.21.0-py3-none-any.whl", hash = "sha256:1684eb44636dd462b66c3ee016599815514527ad99965de77f43e0944634a7e5"},
+]
+requests = [
+    {file = "requests-2.28.1-py3-none-any.whl", hash = "sha256:8fefa2a1a1365bf5520aac41836fbee479da67864514bdb821f31ce07ce65349"},
+    {file = "requests-2.28.1.tar.gz", hash = "sha256:7c5599b102feddaa661c826c56ab4fee28bfd17f5abca1ebbe3e7f19d7c97983"},
+]
+urllib3 = [
+    {file = "urllib3-1.26.12-py2.py3-none-any.whl", hash = "sha256:b930dd878d5a8afb066a637fbb35144fe7901e3b209d1cd4f524bd0e9deee997"},
+    {file = "urllib3-1.26.12.tar.gz", hash = "sha256:3fa96cf423e6987997fc326ae8df396db2a8b7c667747d47ddd8ecba91f4a74e"},
+]

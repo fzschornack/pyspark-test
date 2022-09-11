@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "pyspark-test"
+version = "0.1.0"
+description = ""
+authors = ["Felipe Zschornack <fzschornack@gmail.com>"]
+readme = "README.md"
+packages = [{include = "pyspark_test"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pyspark = "^3.3.0"
+JayDeBeApi = "^1.2.3"
+requests = "^2.28.1"
+python-dotenv = "^0.21.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
